@@ -21,7 +21,6 @@ namespace goRent.Controllers
         [HttpGet]
         public IActionResult AddCar()
         {
-
             return View();
         }
 
