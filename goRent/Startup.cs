@@ -1,3 +1,4 @@
+using goRent.Class;
 using goRent.Data;
 using goRent.Service;
 using Microsoft.AspNetCore.Builder;

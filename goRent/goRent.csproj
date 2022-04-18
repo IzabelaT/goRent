@@ -8,6 +8,8 @@
   <ItemGroup>
     <Compile Remove="Data\Migrations\20220418172120_initial.cs" />
     <Compile Remove="Data\Migrations\20220418172120_initial.Designer.cs" />
+    <Compile Remove="Data\Migrations\20220418203234_new.cs" />
+    <Compile Remove="Data\Migrations\20220418203234_new.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>
@@ -19,6 +21,8 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="MimeKit" Version="3.2.0" />
+    <PackageReference Include="SendGrid" Version="9.27.0" />
   </ItemGroup>
 
   <ItemGroup>

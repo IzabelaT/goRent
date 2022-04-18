@@ -19,6 +19,18 @@ namespace goRent.Controllers
         {
             this.rentCarService = rentCarService;
         }
+        public IActionResult CreateRenter()
+        {
+            return View();
+        }
+        [HttpPost]
+        public IActionResult CreateRenter(RenterViewModel rent)
+        {
+            if (!ModelState.IsValid) return BadRequest("Enter required fields");
+            //Write your Insert code here;
+            return this.Ok($"Form Data received!");
+        }
+
 
         public IActionResult Index()
         {
