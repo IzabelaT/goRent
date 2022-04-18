@@ -35,11 +35,6 @@ namespace goRent.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
-        {
-            return View();
-        }
-
         [HttpPost]
         public IActionResult SaveCar(Car car)
         {
