@@ -10,7 +10,15 @@ a.navbar-brand {
 a {
     color: #0366d6;
 }
-
+p {
+    color: #6c757d;
+}
+h4 {
+    color: #6c757d;
+}
+label {
+    color: #6c757d;
+}
 .btn-primary {
     color: #fff;
     background-color: #1b6ec2;
