@@ -1,0 +1,37 @@
+﻿@using goRent.Class
+@model List<Car>
+
+@if (Model == null || Model.Count == 0)
+{
+    <h2 class="text-secondary">No Rent Car Result in This Moment.</h2>
+}
+else
+{
+    @foreach (var car in Model)
+    {
+
+        <form class="btn-group">
+            <div class="car-card text-secondary">
+                <div onclick="getCar('@car.Id')" class="row">
+                    <div class="col-3">
+                        <b>Brand: @car.Brand</b>
+                    </div>
+                    <div class="col-3">
+                        <b>Color: @car.Color</b>
+                    </div>
+                    <div class="col-3">
+                        <b>DateBrought: @car.BringDate</b>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <hr class="alert-danger" />
+
+    }
+}
+
+<script>
+    const getCar = (id) => {
+        window.location = `/Car/GetCar/${id}`
+    }
+</script>
